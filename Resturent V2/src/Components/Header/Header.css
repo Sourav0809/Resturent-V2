@@ -10,7 +10,7 @@
   align-items: center;
   background-color: black;
   color: white;
-  padding: 0.3125rem;
+  padding: 0.5rem;
 }
 .header h2 {
   font-size: 1.5625rem;
@@ -18,7 +18,7 @@
 }
 
 .cart-header {
-  border: 0.125rem solid white;
+  border: 0.0625rem solid white;
   border-radius: 0.4375rem;
   padding: 0.3125rem 1rem;
   display: flex;
