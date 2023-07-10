@@ -1,0 +1,61 @@
+@import '../Style/CssFunc';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: toRem(5) ;
+    h2{
+        font-size: toRem(25);
+        cursor: pointer;
+    }
+}
+.cart-header{
+    border: toRem(2) solid white;
+    border-radius: toRem(7);
+    padding: toRem(5) toRem(16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: toRem(7);
+    cursor: pointer;
+}
+.cart-quantity{
+    background-color:aliceblue;
+    color: red;
+    padding: toRem(5) toRem(10);
+    border-radius: toRem(20);
+}
+
+html{
+    font-size: 16px;
+}
+
+
+
+// media queries for different screen sizes
+
+@media only screen and (max-width: 480px) and (min-width: 300px)  {
+
+    html{
+        font-size: 10px;
+    }
+
+}
+@media only screen and (max-width: 800px) and (min-width: 480px)  {
+
+    html{
+        font-size: 13px;
+    }
+
+}
+
