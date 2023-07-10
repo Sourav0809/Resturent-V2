@@ -1,0 +1,20 @@
+.summary_section {
+  width: 100vw;
+  height: 30vh;
+  background: url(https://png.pngtree.com/thumb_back/fw800/background/20190221/ourmid/pngtree-food-food-snack-eating-goods-image_14522.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-weight: bolder;
+  gap: 0.3125rem;
+}
+.summary_section h2 {
+  font-size: 3.75rem;
+}
+.summary_section p {
+  font-size: 1.5625rem;
+}/*# sourceMappingURL=Summary.css.map */
