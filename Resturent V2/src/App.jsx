@@ -1,11 +1,11 @@
 import "./App.css";
 import Header from "./Components/Header/Header";
-import Summary from "./Components/Summary/Summary";
+import CoverSection from "./Components/Cover/CoverSection";
 function App() {
   return (
     <>
       <Header />
-      <Summary />
+      <CoverSection />
     </>
   );
 }

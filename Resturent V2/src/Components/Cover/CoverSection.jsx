@@ -1,5 +1,5 @@
-import "./Summary.css";
-const Summary = () => {
+import "./CoverSection.css";
+const CoverSection = () => {
   return (
     <div className="summary_section">
       <h2>It's Not just Food , Its an Experience</h2>
@@ -8,4 +8,4 @@ const Summary = () => {
   );
 };
 
-export default Summary;
+export default CoverSection;
