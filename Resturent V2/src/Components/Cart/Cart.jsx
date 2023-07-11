@@ -14,10 +14,24 @@ const Cart = (props) => {
             <h1>{items.addedItemName}</h1>
             <h1>{items.addedItemPrice}</h1>
             <h1>{items.addedItemQuantity}</h1>
-            <button> delete</button>
+            <button
+              onClick={() => {
+                cartCtx.incrementCartItem(items.addedItemId);
+              }}
+            >
+              Inc
+            </button>
+            <button
+              onClick={() => {
+                cartCtx.decrementCartItem(items.addedItemId);
+              }}
+            >
+              Dec
+            </button>
           </div>
         );
       })}
+      <h1>Total Price {cartCtx.totalAmount}</h1>
       <div className="cart-btn">
         <button className="order-btn">Order</button>
         <button onClick={props.onCartHide} className="close-btn">
