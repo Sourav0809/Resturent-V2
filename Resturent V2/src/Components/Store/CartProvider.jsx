@@ -21,13 +21,50 @@ const CartProvider = (props) => {
       }
     });
   };
-  const removeItemHandeler = (id) => {};
+  // calculating the total price of the cart
+  let totalPrice = 0;
+  cartItems.forEach((value) => {
+    totalPrice += value.addedItemPrice * value.addedItemQuantity;
+  });
+
+  // when user increment quantity from cart page
+  const incrementHandeler = (id) => {
+    setCartItems((prevItems) => {
+      return prevItems.map((values) => {
+        if (id === values.addedItemId) {
+          values.addedItemQuantity += 1;
+        }
+        return values;
+      });
+    });
+  };
+  // when user decrement quantity from cart page
+  const decrementHandeler = (id) => {
+    setCartItems((prevItems) => {
+      const newArr = prevItems.map((values) => {
+        if (id === values.addedItemId) {
+          if (values.addedItemQuantity <= 0) {
+            values.addedItemQuantity = 0;
+          } else {
+            values.addedItemQuantity -= 1;
+          }
+        }
+        return values;
+      });
+      // if user decrease quantity to zero
+      const filteredArr = newArr.filter((values) => {
+        return values.addedItemQuantity !== 0;
+      });
+      return filteredArr;
+    });
+  };
 
   const cartContext = {
     items: cartItems,
-    totalAmount: 0,
+    totalAmount: totalPrice,
     addItem: addItemHandeler,
-    removeItem: removeItemHandeler,
+    incrementCartItem: incrementHandeler,
+    decrementCartItem: decrementHandeler,
   };
 
   return (
