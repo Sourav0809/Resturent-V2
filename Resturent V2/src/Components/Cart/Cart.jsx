@@ -1,13 +1,23 @@
 import "./Cart.css";
 import Modal from "../UI/Modal";
+import CartContext from "../Store/CartContext";
+import { useContext } from "react";
 const Cart = (props) => {
+  const cartCtx = useContext(CartContext);
+  const cartItems = cartCtx.items;
+
   return (
     <Modal>
-      <div>
-        <h1>biriyani</h1>
-        <h1>100</h1>
-        <h1>5</h1>
-      </div>
+      {cartItems.map((items) => {
+        return (
+          <div key={items.addedItemId}>
+            <h1>{items.addedItemName}</h1>
+            <h1>{items.addedItemPrice}</h1>
+            <h1>{items.addedItemQuantity}</h1>
+            <button> delete</button>
+          </div>
+        );
+      })}
       <div className="cart-btn">
         <button className="order-btn">Order</button>
         <button onClick={props.onCartHide} className="close-btn">

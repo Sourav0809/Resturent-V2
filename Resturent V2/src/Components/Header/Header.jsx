@@ -1,6 +1,16 @@
 /* eslint-disable react/prop-types */
 import "./Header.css";
+import CartContext from "../Store/CartContext";
+import { useContext } from "react";
 const Header = (props) => {
+  const cartCtx = useContext(CartContext);
+
+  // getting how much product are added to our cart
+  const numOfCartItems = cartCtx.items.reduce((currNum, item) => {
+    console.log(item);
+    return Number(currNum) + Number(item.addedItemQuantity);
+  }, 0);
+
   return (
     <header className="header">
       <div>
@@ -11,7 +21,7 @@ const Header = (props) => {
           <i className="bx bx-cart"></i>
         </h2>
         <h2>Your Cart</h2>
-        <h2 className="cart-quantity">3</h2>
+        <h2 className="cart-quantity">{numOfCartItems}</h2>
       </div>
     </header>
   );

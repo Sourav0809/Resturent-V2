@@ -1,7 +1,24 @@
 /* eslint-disable react/prop-types */
 import "./MealsItem.css";
 import MealsForm from "../MealsForm/MealsForm";
+import CartContext from "../../Store/CartContext";
+import { useContext } from "react";
+
 const MealsItem = (props) => {
+  const cartCtx = useContext(CartContext);
+  // when user add something to the cart
+  const mealsFormSubmit = (mealsAmount) => {
+    const addedCartItems = {
+      addedItemName: props.itemName,
+      addedItemPrice: props.price,
+      addedItemQuantity: mealsAmount,
+      addedItemImage: props.img,
+      addedItemId: props.id,
+    };
+    console.log(addedCartItems);
+    cartCtx.addItem(addedCartItems);
+  };
+
   return (
     <div className="container-items">
       <div className="items-image">
@@ -17,7 +34,7 @@ const MealsItem = (props) => {
         </p>
       </div>
       <div className="items-descrip">
-        <MealsForm />
+        <MealsForm onSubmit={mealsFormSubmit} />
       </div>
     </div>
   );
