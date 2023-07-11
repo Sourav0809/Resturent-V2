@@ -1,23 +1,48 @@
 
 @import '../Style/CssFunc';
 
-.summary_section{
-    width: 100vw;
-    height: 30vh;
-    background: url(https://png.pngtree.com/thumb_back/fw800/background/20190221/ourmid/pngtree-food-food-snack-eating-goods-image_14522.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: whitesmoke;
-    font-weight: bolder;
-    gap: toRem(5);
-    h2{
-        font-size: toRem(60);
-    }
-    p{
-        font-size: toRem(25);
-    }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100;1,900&display=swap');
+
+.summary_section {
+  width: 100vw;
+  height: 30vh;
+  background: url(https://png.pngtree.com/thumb_back/fw800/background/20190221/ourmid/pngtree-food-food-snack-eating-goods-image_14522.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(212, 242, 15);
+  font-weight: bolder;
+  gap: 0.3125rem;
+}
+
+.summary_section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.75rem;
+  padding: toRem(10);
+}
+
+.summary_section p {
+  font-size: toRem(30);
+  font-family: 'Poppins', sans-serif;
+  color: rgb(55, 198, 226);
+  padding-left: 22% ;
+}
+
+// Media Queries for Differnet screen sizes
+
+@media only screen and (min-device-width:300px) and (max-device-width:480px) {
+  .summary_section {
+    height: 24vh;
+  }
+  
+} 
+
+@media only screen and (min-device-width:480px) and (max-device-width:1000px) {
+  .summary_section {
+    height: 27vh;
+  }
+  
 }

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100;1,900&display=swap");
 .summary_section {
   width: 100vw;
   height: 30vh;
@@ -8,13 +9,31 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: whitesmoke;
+  color: rgb(212, 242, 15);
   font-weight: bolder;
   gap: 0.3125rem;
 }
+
 .summary_section h2 {
+  font-family: "Poppins", sans-serif;
   font-size: 3.75rem;
+  padding: 0.625rem;
 }
+
 .summary_section p {
-  font-size: 1.5625rem;
+  font-size: 1.875rem;
+  font-family: "Poppins", sans-serif;
+  color: rgb(55, 198, 226);
+  padding-left: 22%;
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 480px) {
+  .summary_section {
+    height: 24vh;
+  }
+}
+@media only screen and (min-device-width: 480px) and (max-device-width: 1000px) {
+  .summary_section {
+    height: 27vh;
+  }
 }/*# sourceMappingURL=CoverSection.css.map */

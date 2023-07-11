@@ -29,12 +29,12 @@ h1 {
   font-size: 1.875rem;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 480px) {
   .main-container {
     width: 100%;
   }
   html {
-    font-size: 11px;
+    font-size: 8px;
   }
 }
 @media only screen and (min-device-width: 480px) and (max-device-width: 1000px) {

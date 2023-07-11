@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import "./MealsItem.css";
-
+import MealsForm from "../MealsForm/MealsForm";
 const MealsItem = (props) => {
   return (
     <div className="container-items">
@@ -17,13 +17,7 @@ const MealsItem = (props) => {
         </p>
       </div>
       <div className="items-descrip">
-        <div className="item-count">
-          <button className="btn-count">-</button>
-          <h3 className="btn-text">0</h3>
-          <button className="btn-count">+</button>
-        </div>
-
-        <button className="item-quantity-btn">Add</button>
+        <MealsForm />
       </div>
     </div>
   );
