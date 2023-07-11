@@ -1,0 +1,23 @@
+.cart-container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-btn {
+  margin-top: 0.625rem;
+  display: flex;
+  gap: 0.3125rem;
+}
+
+.order-btn,
+.close-btn {
+  font-size: 1.125rem;
+  border: none;
+  padding: 0.3125rem 0.875rem;
+  background-color: rgb(10, 10, 70);
+  color: white;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+}/*# sourceMappingURL=Cart.css.map */

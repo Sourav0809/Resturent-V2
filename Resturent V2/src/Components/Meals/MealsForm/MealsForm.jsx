@@ -2,7 +2,12 @@ import "./MealsForm.css";
 
 const MealsForm = () => {
   return (
-    <form className="meals-form">
+    <form
+      className="meals-form"
+      onSubmit={(e) => {
+        e.preventDefault();
+      }}
+    >
       <div className="quantity-input">
         <label className="meals-form-label" htmlFor="Price">
           Amount

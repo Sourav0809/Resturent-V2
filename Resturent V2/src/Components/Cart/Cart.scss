@@ -1,0 +1,24 @@
+@import "../Style/CssFunc";
+
+.cart-container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-btn {
+  margin-top: toRem(10);
+  display: flex;
+  gap: toRem(5);
+}
+.order-btn,
+.close-btn {
+  font-size: toRem(18);
+  border: none;
+  padding: toRem(5) toRem(14);
+  background-color: rgb(10, 10, 70);
+  color: white;
+  border-radius: toRem(5);
+  cursor: pointer;
+}

@@ -10,7 +10,7 @@ const Header = () => {
           <i className="bx bx-cart"></i>
         </h2>
         <h2>Your Cart</h2>
-        <h2 className="cart-quantity">0</h2>
+        <h2 className="cart-quantity">3</h2>
       </div>
     </header>
   );
