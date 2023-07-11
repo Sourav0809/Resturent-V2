@@ -1,11 +1,12 @@
+/* eslint-disable react/prop-types */
 import "./Header.css";
-const Header = () => {
+const Header = (props) => {
   return (
     <header className="header">
       <div>
         <h2 onClick={() => location.reload()}>Kolkata Local</h2>
       </div>
-      <div className="cart-header">
+      <div onClick={props.onCartShow} className="cart-header">
         <h2>
           <i className="bx bx-cart"></i>
         </h2>

@@ -1,6 +1,6 @@
 import "./Cart.css";
 import Modal from "../UI/Modal";
-const Cart = () => {
+const Cart = (props) => {
   return (
     <Modal>
       <div>
@@ -10,7 +10,9 @@ const Cart = () => {
       </div>
       <div className="cart-btn">
         <button className="order-btn">Order</button>
-        <button className="close-btn">Close</button>
+        <button onClick={props.onCartHide} className="close-btn">
+          Close
+        </button>
       </div>
     </Modal>
   );
