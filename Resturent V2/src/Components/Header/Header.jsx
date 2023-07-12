@@ -7,7 +7,6 @@ const Header = (props) => {
 
   // getting how much product are added to our cart
   const numOfCartItems = cartCtx.items.reduce((currNum, item) => {
-    console.log(item);
     return Number(currNum) + Number(item.addedItemQuantity);
   }, 0);
 

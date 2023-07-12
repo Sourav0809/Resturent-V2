@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import "./MealsForm.css";
-
 const MealsForm = (props) => {
   const [mealsAmount, setMealsAmount] = useState(1);
   const mealsAmountHandeler = (e) => {
@@ -14,6 +13,7 @@ const MealsForm = (props) => {
       onSubmit={(e) => {
         e.preventDefault();
         props.onSubmit(Number(mealsAmount));
+        setMealsAmount(1);
       }}
     >
       <div className="quantity-input">
@@ -23,6 +23,7 @@ const MealsForm = (props) => {
         <input
           className="meals-form-input"
           type="number"
+          min="1"
           onChange={mealsAmountHandeler}
           value={mealsAmount}
         />

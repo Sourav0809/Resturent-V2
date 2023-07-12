@@ -74,4 +74,23 @@
   padding: 0.3125rem 3.125rem;
   display: flex;
   justify-content: space-between;
+}
+
+.empty-cart-container {
+  padding: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.empty-cart-container div {
+  width: 5rem;
+  height: 5rem;
+  background-image: url(https://cdn3.iconfinder.com/data/icons/shopping-and-ecommerce-29/90/empty_cart-512.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.empty-cart-text {
+  font-size: 1.75rem;
+  text-align: center;
 }/*# sourceMappingURL=Cart.css.map */

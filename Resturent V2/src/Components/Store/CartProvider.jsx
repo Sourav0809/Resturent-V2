@@ -10,7 +10,7 @@ const CartProvider = (props) => {
       const newArr = prevItems.map((values) => {
         if (values.addedItemId === items.addedItemId) {
           isPresent = true;
-          values.addedItemQuantity = items.addedItemQuantity;
+          values.addedItemQuantity += items.addedItemQuantity;
         }
         return values;
       });

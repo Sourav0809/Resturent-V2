@@ -15,7 +15,6 @@ const MealsItem = (props) => {
       addedItemImage: props.img,
       addedItemId: props.id,
     };
-    console.log(addedCartItems);
     cartCtx.addItem(addedCartItems);
   };
 

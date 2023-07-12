@@ -10,6 +10,7 @@ function App() {
   const [cartShow, setCartShow] = useState(false);
   const onCartShow = () => {
     setCartShow(true);
+    // to prevent the scrolling while the cart container is shown
   };
   const cartHideHandeler = () => {
     setCartShow(false);
