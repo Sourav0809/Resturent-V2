@@ -15,9 +15,12 @@
 
 .meals-form-input {
   padding: 0.3125rem;
-  width: 16%;
-  border-radius: 0.3125rem;
-  font-size: 1rem;
+  padding-left: 0.5rem;
+  width: 28%;
+  text-align: center;
+  border-radius: 0.625rem;
+  font-size: 1.125rem;
+  font-weight: 700;
 }
 
 .meals-form-label {

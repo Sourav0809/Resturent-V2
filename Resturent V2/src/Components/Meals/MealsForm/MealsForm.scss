@@ -1,43 +1,44 @@
-@import '../../Style/CssFunc';
+@import "../../Style/CssFunc";
 
-.meals-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: toRem(10);
+.meals-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: toRem(10);
 }
 
-.quantity-input{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: toRem(5);
+.quantity-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: toRem(5);
 }
 
-.meals-form-input{
-    padding: toRem(5);
-    width: 16%;
-    border-radius: toRem(5);
+.meals-form-input {
+  padding: toRem(5);
+  padding-left: toRem(8);
+  width: 28%;
+  text-align: center;
+  border-radius: toRem(10);
+  font-size: toRem(18);
+  font-weight: 700;
+}
+
+.meals-form-label {
+  font-size: toRem(22);
+  font-weight: bold;
+}
+
+.quantity-btn {
+  button {
+    padding: toRem(7) toRem(28);
     font-size: toRem(16);
-
-}
-
-.meals-form-label{
-    font-size: toRem(22);
+    background-color: rgb(119, 30, 30);
+    color: white;
     font-weight: bold;
-
-}
-
-.quantity-btn{
-    button{
-        padding: toRem(7) toRem(28);
-        font-size: toRem(16);
-        background-color: rgb(119, 30, 30);
-        color: white;
-        font-weight: bold;
-        border: none;
-        border-radius: toRem(12);
-        cursor: pointer;
-    }
+    border: none;
+    border-radius: toRem(12);
+    cursor: pointer;
+  }
 }
